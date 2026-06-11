@@ -39,7 +39,7 @@ export default function App() {
   const [dragActive, setDragActive] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  // --- Calculator Logic ----
+  // --- Calculator Logic -----
   const handleCalcInput = useCallback((val: string) => {
     setCalcDisplay(prev => {
       if (prev === '0' && !isNaN(Number(val))) return val;
